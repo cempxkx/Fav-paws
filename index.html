@@ -7,18 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app">
+<div id="app">
+
+  <div id="header">
     <h2 class="title">Fav Paws 🐾</h2>
     <p class="instructions">Swipe right to like, left to dislike</p>
-
-    <div id="card-container"></div>
-
-    <div id="summary" class="hidden">
-      <h2>You liked <span id="like-count"></span> cats!</h2>
-      <div id="liked-images"></div>
-      <button id="restart-btn">Start Again</button>
-    </div>
   </div>
+  
+  <div id="card-container" class="hidden"></div>
+
+  <div id="loading" class="hidden">Loading cats...</div>
+
+  <div id="summary" class="hidden">
+    <h2>You liked <span id="like-count"></span> cats!</h2>
+    <div id="liked-images"></div>
+    <button id="restart-btn">Start Again</button>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>
