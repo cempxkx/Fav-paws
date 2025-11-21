@@ -9,22 +9,104 @@
 <body>
 <div id="app">
 
-  <div id="header">
+  <header id="header">
     <h2 class="title">Fav Paws 🐾</h2>
     <p class="instructions">Swipe right to like, left to dislike</p>
-  </div>
+  </header>
   
-  <div id="card-container" class="hidden"></div>
+ <!-- Card stack -->
+    <main id="stage">
+<div id="card-container" class="hidden"></div>
 
-  <div id="loading" class="hidden">Loading cats...</div>
+<div id="loading" class="loader hidden">
+    <div class="paw-loader">
+        <div class="paw">
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="heel"></div>
+        </div>
 
-  <div id="summary" class="hidden">
-    <h2>You liked <span id="like-count"></span> cats!</h2>
-    <div id="liked-images"></div>
-    <button id="restart-btn">Start Again</button>
-  </div>
+        <div class="paw">
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="heel"></div>
+        </div>
+
+        <div class="paw">
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="heel"></div>
+        </div>
+
+        <div class="paw">
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="heel"></div>
+        </div>
+
+        <div class="paw">
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="heel"></div>
+        </div>
+
+        <div class="paw">
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="heel"></div>
+        </div>
+
+        <div class="paw">
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="heel"></div>
+        </div>
+
+        <div class="paw">
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="toe"></div>
+            <div class="heel"></div>
+        </div>
+    </div>
+
+    <span class="loading-text">Loading...</span>
 </div>
+</main>
 
+     <!-- Footer pagination -->
+    <footer id="footer">
+      <div id="pagination" class="pagination hidden">
+        &lt; 
+        <span id="current">1</span>/
+        <span id="total">10</span> &gt;
+      </div>
+    </footer>
+    
+
+<!-- Summary -->
+    <section id="summary" class="hidden">
+      <h2 class="summary-title" id="summary-title">You just liked <span id="like-count">0</span> cats!</h2>
+      <div id="liked-images" class="liked-grid"></div>
+      <button id="restart-btn" class="restart-btn">Start Again</button>
+    </section>
+
+    </div>
   <script src="script.js"></script>
 </body>
 </html>
